@@ -7,11 +7,11 @@ description: >-
 type: Contract
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Marketplace
-  - Discovery
-  - Search
-  - Platform
   - API Hub
+  - Discovery
+  - Marketplace
+  - Platform
+  - Search
 access: 3rd-Party
 position: Consuming
 url: https://raw.githubusercontent.com/api-evangelist/zyla/refs/heads/main/apis.yml
@@ -28,10 +28,10 @@ apis:
       single API key.
     humanURL: https://zylalabs.com/
     tags:
-      - Marketplace
       - API Hub
-      - Integration
       - Discovery
+      - Integration
+      - Marketplace
     properties:
       - type: Documentation
         url: https://developers.zyla.com/docs/zyla-developer-doc/zyla_enterprise_solution/api_overview
