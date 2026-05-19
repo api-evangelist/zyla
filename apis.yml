@@ -16,7 +16,7 @@ access: 3rd-Party
 position: Consuming
 url: https://raw.githubusercontent.com/api-evangelist/zyla/refs/heads/main/apis.yml
 created: '2025-01-08'
-modified: '2026-03-26'
+modified: '2026-05-19'
 specificationVersion: '0.19'
 apis:
   - aid: zyla:zyla-api-hub
@@ -54,6 +54,9 @@ common:
     url: https://www.linkedin.com/company/zyla-labs
   - type: Instagram
     url: https://www.instagram.com/zylalabs/
+  - name: MCP Server
+    url: https://github.com/Zyla-Labs/zyla-mcp-plugin
+    type: MCPServer
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
