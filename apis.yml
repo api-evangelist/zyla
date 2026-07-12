@@ -38,6 +38,8 @@ apis:
       - type: API Marketplace
         url: https://zylalabs.com/api-marketplace
 common:
+  - type: DomainSecurity
+    url: security/zyla-domain-security.yml
   - type: Website
     url: https://zylalabs.com/
   - type: Documentation
