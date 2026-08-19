@@ -29,7 +29,7 @@ position: Consuming
 url: https://raw.githubusercontent.com/api-evangelist/zyla/refs/heads/main/apis.yml
 created: '2025-01-08'
 modified: '2026-05-19'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
   - aid: zyla:zyla-api-hub
     name: Zyla API Hub
