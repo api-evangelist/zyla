@@ -1,0 +1,35 @@
+generated: '2026-09-11'
+method: probed
+source: https://github.com/Zyla-Labs/zyla-mcp-plugin
+status: published
+server:
+  name: zyla
+  transport: http
+  url: https://mcp.zylalabs.com/mcp
+deployment:
+  mode: remote
+  endpoint: https://mcp.zylalabs.com/mcp
+  verified: probed
+  probe: live
+  checked: '2026-09-11'
+  source: ptr_only reconciliation 2026-09-11 (apis.yml pointed here, no manifest existed)
+tools_count: 8
+tools:
+- name: search_catalog
+  description: ''
+- name: get_api_info
+  description: ''
+- name: call_api
+  description: ''
+- name: browse_catalog
+  description: ''
+- name: list_categories
+  description: ''
+- name: register
+  description: ''
+- name: account_status
+  description: ''
+- name: get_payment_url
+  description: ''
+tools_source: live tools/list via initialize handshake, 2026-09-11 (signals/audit_mcp_authorship.py --probe)
+authorship: provider
