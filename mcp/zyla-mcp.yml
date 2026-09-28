@@ -16,20 +16,38 @@ deployment:
 tools_count: 8
 tools:
 - name: search_catalog
-  description: ''
+  description: Semantic search across ALL 10,000+ public APIs on Zyla API Hub. Natural-language queries
+    work best (e.g. "validate an email address", "get stock prices"). Returns matching APIs ranked by
+    relevance with their ID, name, description, category,
 - name: get_api_info
-  description: ''
+  description: Get full details of a specific Zyla API by its numeric ID. Returns the API name, description,
+    category, price per successful call (USD), average latency (ms), and all endpoints with their parameters,
+    example values, and a formal JSON Schema
 - name: call_api
-  description: ''
+  description: 'Call an API endpoint on Zyla API Hub. Requires the user''s API key and a credit card on
+    file. Billing is pay-per-successful-request: you only pay for 2xx responses. Each API has its own
+    price per call (shown in get_api_info), and every succe'
 - name: browse_catalog
-  description: ''
+  description: Browse the full Zyla API Hub catalog with pagination. Use this to explore ALL public APIs
+    beyond the top 500. Supports filtering by category and search keyword. Returns paginated results with
+    total count and page info.
 - name: list_categories
-  description: ''
+  description: 'List all available API categories on Zyla API Hub with the real count of public APIs in
+    each. Use the category names returned here as the "category" parameter in browse_catalog to filter
+    APIs by category. Example categories: Sports, Finance'
 - name: register
-  description: ''
+  description: 'Register a new Zyla API Hub account directly from the AI agent. Returns an API key AND
+    a payment_url. The user MUST open the payment_url in their browser to add a credit card before making
+    any API calls. Billing model: pay-per-successful-re'
 - name: account_status
-  description: ''
+  description: Check the current user's account status, billing, and usage. Returns plan info, API call
+    count, the amount consumed this billing cycle in USD (amount_consumed_this_cycle_usd), the billing
+    mode in effect (billing_mode), whether a credit card
 - name: get_payment_url
-  description: ''
+  description: Get a Stripe Checkout URL so the user can add or update their credit card. REQUIRED after
+    registration and whenever a 402 error occurs. The user must open the returned URL in their browser
+    to add/update their card. Billing is pay-per-succes
 tools_source: live tools/list via initialize handshake, 2026-09-11 (signals/audit_mcp_authorship.py --probe)
 authorship: provider
+descriptions_source: live tools/list (authorship probe or saved capture); filled by backfill-tools-from-authorship.py
+  --descriptions, 2026-09-28
