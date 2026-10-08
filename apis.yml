@@ -61,6 +61,12 @@ apis:
       - type: API Marketplace
         url: https://zylalabs.com/api-marketplace
 common:
+  - type: Plans
+    url: plans/zyla-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/zyla-rate-limits.yml
+  - type: FinOps
+    url: finops/zyla-finops.yml
   - type: DomainSecurity
     url: security/zyla-domain-security.yml
   - type: Website
